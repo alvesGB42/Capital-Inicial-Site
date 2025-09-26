@@ -1,0 +1,276 @@
+/* ===========================
+   Reset / variáveis
+   =========================== */
+:root{
+  --bg: #111111;
+  --card: #1a1a1a;
+  --muted: #bbbbbb;
+  --accent: #e63946;   /* vermelho */
+  --accent-2: #ffd60a; /* dourado */
+  --glass: rgba(255,255,255,0.05);
+  --base-font: 1rem;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Arial";
+  background: linear-gradient(180deg, var(--bg) 0%, #0a0a0a 100%);
+  color:#e6e6e6;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+  font-size:var(--base-font);
+}
+
+/* Utility visually-hidden */
+.visually-hidden { position:absolute !important; height:1px; width:1px; overflow:hidden; clip:rect(1px,1px,1px,1px); white-space:nowrap; }
+
+/* ===========================
+   Header / nav
+   =========================== */
+.site-header{border-bottom:1px solid rgba(255,255,255,0.04); background:transparent}
+.brand{gap:.75rem;text-decoration:none;color:inherit}
+.brand-logo{width:46px;height:46px;object-fit:contain;margin-right:.5rem;filter:drop-shadow(0 6px 18px rgba(255,59,59,0.15))}
+.brand-title{font-weight:700;font-size:1.15rem;letter-spacing:.6px}
+
+/* Mobile menu button */
+.mobile-menu-btn{background:transparent;border:0;color:var(--muted);font-size:1.45rem}
+.mobile-menu{background:linear-gradient(180deg,#0b0b0b,#0f0f0f);border-top:1px solid rgba(255,255,255,0.03)}
+.mobile-menu a{display:block;padding:.6rem 0;color:var(--muted);text-decoration:none}
+
+/* ===========================
+   HERO
+   =========================== */
+.hero-section{padding:3.5rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:2rem;align-items:center}
+@media(max-width:991px){ .hero-grid{grid-template-columns:1fr} .hero-right{display:none} }
+
+.hero-title{font-size:2.25rem;margin:0 0 .5rem;color:#fff;text-shadow:0 6px 30px rgba(0,0,0,0.6)}
+.lead{color:var(--muted);margin-bottom:1rem}
+.hero-art{width:100%;max-width:420px;display:block;filter: drop-shadow(0 20px 40px rgba(0,0,0,0.6));transform:rotate(-4deg)}
+
+/* Buttons */
+.btn{border-radius:10px;padding:.55rem .9rem}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#ff7b7b);border:0;color:#0a0a0a;font-weight:700;box-shadow:0 8px 28px rgba(255,59,59,0.12)}
+.btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted);}
+
+/* ===========================
+   Sections / cards / grid
+   =========================== */
+.section-title{font-size:1.6rem;color:#fff;margin-bottom:.4rem}
+.section-sub{color:var(--muted);margin-bottom:1rem}
+
+.highlight-card{background:linear-gradient(180deg,var(--card),#0f0f10);border-radius:10px;box-shadow:0 6px 28px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.03)}
+.highlight-card .card-body{padding:1.25rem}
+.bullet-list{padding-left:1.1rem;color:var(--muted)}
+
+.mini-card{background:var(--glass);border:1px solid rgba(255,255,255,0.03);padding:1rem;border-radius:8px;text-align:center}
+.mini-card h4{margin:0 0 .4rem;color:var(--accent)}
+.mini-card p{margin:0;color:var(--muted)}
+
+/* timeline */
+.timeline{display:flex;flex-direction:column;gap:1rem}
+.timeline-item{display:flex;gap:1rem;align-items:flex-start;padding:1rem;background:linear-gradient(180deg,#0b0b0b,#0f0f0f);border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.timeline-year{font-weight:700;color:var(--accent-2);min-width:86px}
+
+/* banda */
+.secao-banda{background:linear-gradient(180deg,#0e0e0e,#121213);border:1px solid rgba(255,59,59,0.06);padding:1.5rem;border-radius:12px}
+.texto-banda h3{color:var(--accent);margin-top:0}
+.sticky-card{position:-webkit-sticky;position:sticky;top:100px;background:var(--card);border-radius:10px;padding:1rem;box-shadow:0 10px 30px rgba(0,0,0,0.6);border:1px solid rgba(57,255,20,0.06)}
+.sticky-card dt{font-weight:700}
+.sticky-card dd{margin:0 0 .6rem;color:var(--muted)}
+
+/* gallery masonry */
+.masonry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:1200px){ .masonry-grid{grid-template-columns:repeat(3,1fr)} }
+@media(max-width:768px){ .masonry-grid{grid-template-columns:repeat(2,1fr)} }
+.masonry-item{overflow:hidden;border-radius:8px;border:1px solid rgba(255,255,255,0.03)}
+.masonry-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.masonry-item:focus img, .masonry-item:hover img{transform:scale(1.06)}
+
+/* contact */
+.contact-form .form-control{background:transparent;border:1px solid rgba(255,255,255,0.06);color:inherit;border-radius:8px}
+.form-help{color:var(--muted)}
+
+/* footer */
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);color:var(--muted)}
+.site-footer .socials a{color:var(--muted);text-decoration:none}
+
+/* small niceties */
+.masonry-item, .mini-card, .highlight-card, .timeline-item{transition:all .25s ease}
+.highlight-card:focus, .highlight-card:hover, .mini-card:focus, .mini-card:hover, .timeline-item:focus, .timeline-item:hover{
+  transform:translateY(-6px);
+  box-shadow:0 24px 40px rgba(0,0,0,0.6);
+}
+
+/* ===========================
+   Barra de acessibilidade (estilos)
+   =========================== */
+.access-toolbar{
+  position:fixed;
+  top:1.2rem;
+  right:1.2rem;
+  z-index:1200;
+  display:flex;
+  align-items:flex-start;
+  gap:.5rem;
+  font-size:.95rem;
+}
+
+/* botão principal */
+.access-toggle{
+  background:linear-gradient(90deg,var(--accent),#ff7b7b);
+  border:0;
+  color:#0a0a0a;
+  padding:.45rem .6rem;
+  border-radius:10px;
+  box-shadow:0 8px 20px rgba(255,59,59,0.12);
+  cursor:pointer;
+}
+
+/* container de controles */
+.access-controls{
+  display:none;
+  flex-direction:column;
+  gap:.5rem;
+  background: rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:.5rem;
+  border-radius:10px;
+  min-width:120px;
+}
+
+/* quando aberto - JS adiciona .open */
+.access-controls.open{ display:flex; }
+
+/* botões pequenos */
+.access-btn{
+  background:transparent;
+  border-radius:8px;
+  padding:.35rem .45rem;
+  border:1px solid rgba(255,255,255,0.04);
+  color:var(--muted);
+  cursor:pointer;
+}
+
+/* alto contraste */
+body.alto-contraste{
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+body.alto-contraste .nav-link{ color: #ffd700 !important; }
+body.alto-contraste .btn-primary{ background:#ffd700 !important; color:#000 !important; }
+
+/* focus visible (acessibilidade) */
+:focus{ outline: none; }
+a:focus, button:focus, input:focus, textarea:focus, .masonry-item:focus { box-shadow: 0 0 0 3px rgba(255,59,59,0.18); border-radius:6px; }
+
+/* pequenas animações */
+@media(prefers-reduced-motion: no-preference){
+  .hero-title{transition:transform .6s ease, opacity .6s ease}
+  .highlight-card, .mini-card, .timeline-item{transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease}
+}
+
+.discography-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:1.25rem;
+}
+
+.album-card{
+  background:var(--card);
+  border-radius:10px;
+  overflow:hidden;
+  cursor:pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border:1px solid rgba(255,255,255,0.03);
+}
+
+.album-card img{
+  width:100%;
+  display:block;
+  object-fit:cover;
+  height:220px;
+  transition: transform 0.3s ease;
+}
+
+.album-card:hover img{
+  transform:scale(1.05);
+}
+
+.album-info{
+  padding:1rem;
+}
+
+.album-info h4{
+  margin:0 0 .5rem;
+  color:var(--accent);
+}
+
+.album-info p{
+  margin:0;
+  color:var(--muted);
+  font-size:.9rem;
+}
+
+.album-links{
+  margin-top:.5rem;
+  font-size:.85rem;
+}
+
+.album-links a{
+  color:var(--accent-2);
+  text-decoration:none;
+  transition:color .25s ease;
+}
+
+.album-links a:hover{
+  color:var(--accent);
+}
+
+.masonry-item{
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,0.03);
+  outline:none; /* remove borda padrão do navegador */
+}
+
+.masonry-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .3s ease;
+}
+
+.masonry-item:focus img,
+.masonry-item:hover img{
+  transform:scale(1.06);
+}
+
+.masonry-item figcaption{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  font-size:.85rem;
+  padding:.4rem .6rem;
+  text-align:center;
+  opacity:0;
+  transition:opacity .3s ease;
+}
+
+.masonry-item:hover figcaption,
+.masonry-item:focus figcaption{
+  opacity:1;
+}
+
+/* foco visível para navegação por teclado */
+.masonry-item:focus{
+  box-shadow:0 0 0 3px rgba(255,59,59,0.4);
+}

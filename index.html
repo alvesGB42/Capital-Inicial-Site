@@ -1,0 +1,269 @@
+  <!doctype html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Capital Inicial — Rock Brasileiro</title>
+
+    <!-- Bootstrap (grid/utilitários) + ícones -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+
+    <meta name="theme-color" content="#111111">
+  </head>
+  <body>
+    <!-- Barra de acessibilidade -->
+    <div id="access-toolbar" class="access-toolbar" aria-label="Barra de acessibilidade" role="region">
+      <button id="access-toggle" class="access-toggle" aria-expanded="false" aria-controls="access-controls">
+        <i class="bi bi-universal-access"></i>
+        <span class="visually-hidden">Acessibilidade</span>
+      </button>
+      <div id="access-controls" class="access-controls" aria-hidden="true">
+        <div class="access-group">
+          <button id="font-decrease" class="access-btn">A-</button>
+          <button id="font-reset" class="access-btn">A</button>
+          <button id="font-increase" class="access-btn">A+</button>
+        </div>
+        <div class="access-group">
+          <button id="toggle-contrast" class="access-btn"><i class="bi bi-circle-half"></i></button>
+        </div>
+        <div class="access-group">
+          <button id="tts-start" class="access-btn">▶︎</button>
+          <button id="tts-stop" class="access-btn">■</button>
+        </div>
+        <div class="access-group">
+          <button id="access-reset" class="access-btn">Resetar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header class="site-header" role="banner">
+      <nav class="container d-flex align-items-center justify-content-between py-3">
+        <a href="#inicio" class="brand d-flex align-items-center">
+          <img src="img/logo.png" alt="Logo Capital Inicial" class="brand-logo" />
+          <span class="brand-title">Capital Inicial</span>
+        </a>
+        <button id="mobile-menu-btn" class="mobile-menu-btn d-lg-none" aria-expanded="false" aria-controls="main-menu">
+          <i class="bi bi-list"></i>
+        </button>
+        <ul id="main-menu" class="nav main-nav d-none d-lg-flex gap-3 align-items-center">
+          <li><a class="nav-link" href="#inicio">Início</a></li>
+          <li><a class="nav-link" href="#trajetoria">Trajetória</a></li>
+          <li><a class="nav-link" href="#timeline">Linha do Tempo</a></li>
+          <li><a class="nav-link" href="#discografia">Discografia</a></li>
+          <li><a class="nav-link" href="#galeria">Galeria</a></li>
+          <li><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section id="inicio" class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <h1 class="hero-title">Capital Inicial</h1>
+            <p class="lead">De Brasília para o Brasil inteiro — uma das maiores bandas de rock nacional.</p>
+            <div class="hero-ctas">
+              <a href="#trajetoria" class="btn btn-primary btn-lg">Conheça a história</a>
+              <a href="#discografia" class="btn btn-outline btn-lg">Discografia</a>
+            </div>
+          </div>
+          <div class="hero-right">
+            <img src="img/arte.png" alt="Arte Capital Inicial" class="hero-art" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Trajetória -->
+      <section id="trajetoria" class="py-5">
+        <div class="container">
+          <h2 class="section-title">Trajetória</h2>
+          <p>O Capital Inicial surgiu em 1982 em Brasília, formado por ex-integrantes da banda Aborto Elétrico. Com letras fortes e sonoridade marcante, se tornou um dos pilares do rock brasileiro.</p>
+          <div class="row mt-4">
+            <div class="col-md-6">
+              <div class="highlight-card">
+                <div class="card-body">
+                  <h3>Anos 80</h3>
+                  <p>Lançamento do álbum de estreia em 1986, com grande repercussão nacional.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="highlight-card">
+                <div class="card-body">
+                  <h3>Anos 90</h3>
+                  <p>Período de crise e mudanças, mas também de reinvenção no cenário musical.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline -->
+      <section id="timeline" class="py-5">
+        <div class="container">
+          <h2 class="section-title">Linha do Tempo</h2>
+          <div class="timeline mt-4">
+            <div class="timeline-item"><time class="timeline-year">1982</time><div class="timeline-body"><h4>Formação</h4><p>Fundação em Brasília.</p></div></div>
+            <div class="timeline-item"><time class="timeline-year">1986</time><div class="timeline-body"><h4>Primeiro Álbum</h4><p>Lançamento de <em>Capital Inicial</em>.</p></div></div>
+            <div class="timeline-item"><time class="timeline-year">1999</time><div class="timeline-body"><h4>Acústico MTV</h4><p>O projeto marcou o retorno ao sucesso.</p></div></div>
+            <div class="timeline-item"><time class="timeline-year">2000+</time><div class="timeline-body"><h4>Shows e novos álbuns</h4><p>Continuidade de lançamentos e turnês lotadas.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="discografia" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Discografia</h2>
+    <div class="discography-grid mt-4">
+      
+<!-- Capital Inicial (1986) -->
+<div class="album-card">
+  <img src="img/capa_Capital-Inicial.webp" alt="Capa do álbum 'Capital Inicial' (1986) — Banda de rock brasileira em fundo escuro com letras estilizadas" />
+  <div class="album-info">
+    <h4>Capital Inicial (1986)</h4>
+    <p>Álbum de estreia com grandes clássicos do rock brasileiro, consolidando a banda no cenário nacional.</p>
+    <div class="album-links">
+      <a href="https://open.spotify.com/album/05tsAf1h467AEWN46GtKnD" target="_blank">Spotify</a> |
+      <a href="https://music.apple.com/br/album/capital-inicial/1442589899" target="_blank">Apple Music</a> |
+      <a href="https://music.youtube.com/playlist?list=PLS1TpdZAiBnajUDwxiqwJNjtRvFmWMBJq" target="_blank">YouTube Music</a> |
+      <a href="https://www.deezer.com/br/album/1442589899" target="_blank">Deezer</a>
+    </div>
+  </div>
+</div>
+
+<!-- Você Não Precisa Entender (1988) -->
+<div class="album-card">
+  <img src="img/capa_voce-nao-precisa-entender.webp" alt="Capa do álbum 'Você Não Precisa Entender' (1988) — Imagem estilizada com a banda em fundo escuro" />
+  <div class="album-info">
+    <h4>Você Não Precisa Entender (1988)</h4>
+    <p>Exploração de novas sonoridades e letras reflexivas que marcaram os anos 80.</p>
+    <div class="album-links">
+      <a href="https://open.spotify.com/intl-pt/album/09A9BvSYxj7tYEergFJurY" target="_blank">Spotify</a> |
+      <a href="https://music.apple.com/br/album/voc%C3%AA-n%C3%A3o-precisa-entender/1442345617" target="_blank">Apple Music</a> |
+      <a href="https://music.youtube.com/playlist?list=PLS1TpdZAiBnYckqPA4d2t2z6PvVZnhDan" target="_blank">YouTube Music</a> |
+      <a href="https://www.deezer.com/br/album/1442345617" target="_blank">Deezer</a>
+    </div>
+  </div>
+</div>
+
+<!-- Eletricidade (1991) -->
+<div class="album-card">
+  <img src="img/capa_eletricidade.webp" alt="Capa do álbum 'Eletricidade' (1991) — Imagem com a banda em fundo escuro e elementos gráficos" />
+  <div class="album-info">
+    <h4>Eletricidade (1991)</h4>
+    <p>Período de experimentação musical, misturando rock e elementos eletrônicos.</p>
+    <div class="album-links">
+      <a href="https://open.spotify.com/album/71YUGiAjX1dCHfQmmzTL8P" target="_blank">Spotify</a> |
+      <a href="https://music.apple.com/br/album/eletricidade/321842783" target="_blank">Apple Music</a> |
+      <a href="https://music.youtube.com/playlist?list=PLS1TpdZAiBnYckqPA4d2t2z6PvVZnhDan" target="_blank">YouTube Music</a> |
+      <a href="https://www.deezer.com/br/album/321842783" target="_blank">Deezer</a>
+    </div>
+  </div>
+</div>
+
+<!-- Acústico MTV (1999) -->
+<div class="album-card">
+  <img src="img/Legião_Urbana_-_Acústico_MTV.jpg" alt="Capa do álbum 'Acústico MTV' (1999) — Imagem com a banda em palco com iluminação suave" />
+  <div class="album-info">
+    <h4>Acústico MTV (1999)</h4>
+    <p>Registro acústico que marcou o retorno da banda ao sucesso com novos arranjos.</p>
+    <div class="album-links">
+      <a href="https://open.spotify.com/album/71YUGiAjX1dCHfQmmzTL8P" target="_blank">Spotify</a> |
+      <a href="https://music.apple.com/br/album/eletricidade/321842783" target="_blank">Apple Music</a> |
+      <a href="https://music.youtube.com/playlist?list=PLS1TpdZAiBnYckqPA4d2t2z6PvVZnhDan" target="_blank">YouTube Music</a> |
+      <a href="https://www.deezer.com/br/album/321842783" target="_blank">Deezer</a>
+    </div>
+  </div>
+</div>
+
+<!-- Rosas e Vinho Tinto (2002) -->
+<div class="album-card">
+  <img src="img/capa_rosas-e-vinho-tinto.webp" alt="Capa do álbum 'Rosas e Vinho Tinto' (2002) — Imagem com a banda em fundo escuro e elementos artísticos" />
+  <div class="album-info">
+    <h4>Rosas e Vinho Tinto (2002)</h4>
+    <p>Álbum consolidando a banda no cenário atual, mesclando clássicos e novas músicas.</p>
+    <div class="album-links">
+      <a href="https://open.spotify.com/album/71YUGiAjX1dCHfQmmzTL8P" target="_blank">Spotify</a> |
+      <a href="https://music.apple.com/br/album/eletricidade/321842783" target="_blank">Apple Music</a> |
+      <a href="https://music.youtube.com/playlist?list=PLS1TpdZAiBnYckqPA4d2t2z6PvVZnhDan" target="_blank">YouTube Music</a> |
+      <a href="https://www.deezer.com/br/album/321842783" target="_blank">Deezer</a>
+    </div>
+  </div>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+      <!-- Galeria -->
+   <section id="galeria" class="py-5">
+  <div class="container">
+    <h2 class="section-title">Galeria</h2>
+    <div class="masonry-grid mt-4">
+
+      <figure class="masonry-item" tabindex="0">
+        <img src="img/capital-inicial-manaus1.webp" alt="Show do Capital Inicial em Manaus" loading="lazy">
+        <figcaption>Capital Inicial ao vivo em Manaus</figcaption>
+      </figure>
+
+      <figure class="masonry-item" tabindex="0">
+        <img src="img/capital.jpg" alt="Foto do grupo Capital Inicial" loading="lazy">
+        <figcaption>Foto oficial do grupo Capital Inicial</figcaption>
+      </figure>
+
+      <figure class="masonry-item" tabindex="0">
+        <img src="img/show-capital-inicial-22-1024x683.jpg" alt="Banda Capital Inicial em show" loading="lazy">
+        <figcaption>Apresentação da banda em show recente</figcaption>
+      </figure>
+
+      <figure class="masonry-item" tabindex="0">
+        <img src="img/img-1042024-capital-inicial-542x400.jpg" alt="Capital Inicial no palco" loading="lazy">
+        <figcaption>Banda Capital Inicial se apresentando no palco</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+
+      <!-- Contato -->
+      <section id="contato" class="py-5">
+        <div class="container">
+          <h2 class="section-title">Fale Conosco</h2>
+          <form id="contact-form" class="contact-form">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input id="nome" class="form-control" type="text" name="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" class="form-control" type="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea id="mensagem" class="form-control" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer py-4">
+      <div class="container text-center">
+        <p>© 2025 Capital Inicial</p>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+  </body>
+  </html>
