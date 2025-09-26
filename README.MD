@@ -2,7 +2,7 @@
 
 ![Capital Inicial](img/logo.png)
 
-**Projeto acadêmico** que apresenta a trajetória, discografia, galeria e contato da banda **Capital Inicial**, com foco em design moderno, interatividade e acessibilidade.
+Projeto que apresenta a trajetória, discografia, galeria e contato da banda **Capital Inicial**, com foco em design moderno, interatividade e acessibilidade.
 
 ---
 
@@ -39,6 +39,4 @@ Este site foi desenvolvido como **projeto acadêmico** para explorar HTML, CSS e
 - Textos alternativos (`alt`) e legendas (`figcaption`) em imagens
 
 ---
-
-## 📂 Estrutura de Pastas
 
