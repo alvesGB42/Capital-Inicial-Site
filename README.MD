@@ -1,23 +1,45 @@
-# Rock 90s —
+🎸 Capital Inicial — Rock Brasileiro
 
-## Objetivo
-Refazer o site original mantendo a estrutura e os recursos de acessibilidade, porém modernizando a apresentação com layout responsivo, animações, timeline e conteúdo expandido sobre o Rock dos anos 90.
+Projeto acadêmico que apresenta a trajetória, discografia, galeria e contato da banda Capital Inicial, com foco em design moderno, interatividade e acessibilidade.
 
-## O que foi feito
-- Mantida a estrutura HTML e todos atributos de acessibilidade (aria, alt, tabindex).
-- A parte de acessibilidade (menu flutuante, botões A+/A-/alto contraste) **não foi alterada**.
-- Adicionado conteúdo: panorama BR/INT, timeline interativa, cards de tópicos, galeria, seção dedicada a Capital Inicial com o texto enviado.
-- Estilização moderna com CSS responsivo e efeitos.
-- Animações de entrada via ScrollReveal e microinterações em CSS/JS.
-- Links e imagens são placeholders: substitua `img/...` por arquivos reais conforme preferir.
+📝 Sobre o Projeto
 
-## Como testar
-1. Coloque os arquivos (`index.html`, `styles.css`, `script.js`) na mesma pasta com uma subpasta `img/` contendo suas imagens.
-2. Abra `index.html` no navegador.
-3. Teste o menu de acessibilidade (A+/A-/Contraste) — comportamento preservado.
+Este site foi desenvolvido como projeto acadêmico para explorar HTML, CSS e JavaScript modernos, apresentando:
 
-## Tecnologias
-- HTML semântio + ARIA
-- CSS moderno (grid, transitions)
-- JavaScript (ScrollReveal + microinteractions)
-- Bootstrap apenas para reset/estrutura
+Trajetória da banda: Linha do tempo e destaques históricos.
+
+Discografia interativa: Álbum com descrição e links para todas as plataformas de streaming.
+
+Galeria de imagens: Com legendas e foco acessível.
+
+Contato: Formulário funcional para envio de mensagens.
+
+Acessibilidade: Alto contraste, ajuste de fontes, leitura em voz alta, navegação por teclado e descrições para imagens.
+
+🌐 Tecnologias Usadas
+
+HTML5 & CSS3
+
+JavaScript (menu mobile, barra de acessibilidade e animações)
+
+Bootstrap 5.3 (grid, utilitários e ícones)
+
+ScrollReveal.js (animações de entrada de conteúdo)
+
+Ícones: Bootstrap Icons
+
+🎨 Recursos de Acessibilidade
+
+Barra de acessibilidade com:
+
+Ajuste de tamanho da fonte
+
+Alto contraste
+
+Leitura em voz alta
+
+Reset de configurações
+
+Navegação por teclado (Tab) com foco visível
+
+Textos alternativos (alt) e legendas (figcaption) em imagens
